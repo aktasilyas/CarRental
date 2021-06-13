@@ -1,0 +1,28 @@
+
+<div class="container mt-5">
+    <label class="control-label">Arabalar</label>
+   <table class="table table-bordered table-striped">
+       <thead>
+           <tr>
+               <th>Renk</th>
+               <th>Marka </th>
+               <th>Model</th>
+               <th>günlük fiyat </th>
+               <th>Acıklama </th>
+               <th>Arac Adı </th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr *ngFor="let car of cars">
+
+               <td>{{car.brandName}}</td>
+               <td>{{car.colorName}}</td>
+               <td>{{car.modelYear}}</td>
+               <td>{{car.dailyPrice}}</td>
+               <td>{{car.description}}</td>
+               <td>{{car.carName}}</td>
+           </tr>
+       </tbody>
+   </table>
+</div>
+

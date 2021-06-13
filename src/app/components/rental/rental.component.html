@@ -1,0 +1,27 @@
+
+<div class="container mt-5">
+    <label class="control-label">Kiralayanlar</label>
+   <table class="table table-bordered table-striped">
+       <thead>
+           <tr>
+               <th>Renk</th>
+               <th>Ad Soyad </th>
+               <th>Kiralama Tarihi</th>
+               <th>Dönüş tarihi </th>
+              
+           </tr>
+       </thead>
+       <tbody>
+           <tr *ngFor="let rental of rentals">
+
+               <td>{{rental.brandName}}</td>
+               <td>{{rental.fullName}}</td>
+               <td>{{rental.rentDate}}</td>
+               <td>{{rental.returnDate}}</td>
+               
+           </tr>
+       </tbody>
+   </table>
+</div>
+
+
