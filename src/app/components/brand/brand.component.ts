@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class BrandComponent implements OnInit {
 
   brands:Brand[]=[];
+  currentBrand:Brand;
   dataLoaded=false;
   constructor(private brandService:BrandService) { }
 
@@ -25,4 +26,7 @@ export class BrandComponent implements OnInit {
 
     })
   }
+  setCurrentBrand(brand:Brand){
+    this.currentBrand=brand;
+    }
 }
